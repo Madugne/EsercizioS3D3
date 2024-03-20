@@ -23,7 +23,6 @@ public class Application {
         PartecipazioneDAO partecipazioneDAO = new PartecipazioneDAO(entityManager);
         LocationDAO locationDAO = new LocationDAO(entityManager);
 
-<<<<<<< HEAD
         Location location1 = new Location("Location1", "Citta'1");
         Evento evento1 = new Evento("Evento1", new Date(),"Evento1 di prova" ,TipoEvento.PRIVATO, 50, location1);
         Persona persona1 = new Persona("Mario", "Rossi", "mario@rossi.com",new Date() ,Sesso.M, null);
@@ -38,11 +37,7 @@ public class Application {
         Persona persona2 = personaDAO.getById(1L);
         persona2.setPartecipazioni(parteciazioni);
         personaDAO.save(persona2);
-=======
-        dao.save(new Evento("evento1", new Date(), "evento prova1", TipoEvento.PRIVATO, 10));
-        dao.save(new Evento("evento2", new Date(), "evento prova2", TipoEvento.PUBBLICO, 50));
-        dao.save(new Evento("evento3", new Date(), "evento prova3", TipoEvento.PRIVATO, 20));
 
->>>>>>> parent of 76c2314 (Esercizio completato)
+
     }
 }
